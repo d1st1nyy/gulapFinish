@@ -9,23 +9,26 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Карточки</h1>
-
 @@include('../components/_header.html')
 
-@@include('../components/_card.html', {
-"img": "./assets/images/cat1",
-"alt": "Изображение 1",
-"title": "Заголовок 1",
-"text": "Текст описания карточки 1"
-})
+@@include('../components/_new_collection.html')
+<div class="card_container">
+    <div class="card">
+        <img src="./assets/images/card_dining.webp" class="card__img">
+        <p class="card__title">Dining</p>
+    </div>
 
-@@include('../components/_card.html', {
-"img": "./assets/images/cat1",
-"alt": "Изображение 2",
-"title": "Заголовок 2",
-"text": "Текст описания карточки 2"
-})
+    <div class="card">
+        <img src="./assets/images/card_living.webp" class="card__img">
+        <p class="card__title">Living</p>
+    </div>
+
+    <div class="card">
+        <img src="./assets/images/card_bedroom.webp" class="card__img">
+        <p class="card__title">Bedroom</p>
+    </div>
+</div>
+
 
 </body>
 </html>

@@ -10,10 +10,26 @@
 @use 'layout/container';
 
 // ==== 4. Components ====
-@use 'components/button';
-@use 'components/card';
 @use 'components/header';
+@use 'components/new_collection';
+@use 'components/card';
 
 body {
   background-color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card_container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &__h2{
+    text-align: center;
+  }
+  &__p{
+    text-align: center;
+  }
 }
