@@ -10,25 +10,109 @@
 </head>
 <body>
 @@include('../components/_header.html')
-
-@@include('../components/_new_collection.html')
-<div class="card_container">
-    <div class="card">
-        <img src="./assets/images/card_dining.webp" class="card__img">
-        <p class="card__title">Dining</p>
-    </div>
-
-    <div class="card">
-        <img src="./assets/images/card_living.webp" class="card__img">
-        <p class="card__title">Living</p>
-    </div>
-
-    <div class="card">
-        <img src="./assets/images/card_bedroom.webp" class="card__img">
-        <p class="card__title">Bedroom</p>
+<div class="new_collection">
+    <img src="./assets/images/new_collection.webp" class="new_collection__img">
+    <div class="new_collection__content">
+        <p class="new_collection__subtitle">New Arrival</p>
+        <h1 class="new_collection__title">Discover Our <br> New Collection</h1>
+        <p class="new_collection__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        <button class="new_collection__button">BUY NOW</button>
     </div>
 </div>
+<section class="cards-section">
+    <div class="container">
+        <h2 class="cards-section__title">Browse The Range</h2>
+        <p class="cards-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="cards-container">
+            @@include('../components/_card.html', {
+            "CardImg": "./assets/images/card_dining",
+            "alt": "Dining",
+            "CardTitle": "Dining"
+            })
+            @@include('../components/_card.html', {
+            "CardImg": "./assets/images/card_living",
+            "alt": "Living",
+            "CardTitle": "Living"
+            })
+            @@include('../components/_card.html', {
+            "CardImg": "./assets/images/card_bedroom",
+            "alt": "Bedroom",
+            "CardTitle": "Bedroom"
+            })
+        </div>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <h2 class="products__title">Our Products</h2>
 
+        <div class="products__grid">
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase1",
+            "purchaseTitle": "Syltherine",
+            "purchaseDescription": "Stylish cafe chair",
+            "purchasePrice": "2.500.000",
+            "purchaseSellPrice": "3.500.000",
+            })
 
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase2",
+            "purchaseTitle": "Leviosa",
+            "purchaseDescription": "Stylish cafe chair",
+            "purchasePrice": "2.500.000",
+            "purchaseSellPrice": false,
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase3",
+            "purchaseTitle": "Lolito",
+            "purchaseDescription": "Luxury big sofa",
+            "purchasePrice": "7.000.000",
+            "purchaseSellPrice": "14.000.000",
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase4",
+            "purchaseTitle": "Respira",
+            "purchaseDescription": "Outdoor bar table and stool",
+            "purchasePrice": "500.000",
+            "purchaseSellPrice": false,
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase5",
+            "purchaseTitle": "Grifo",
+            "purchaseDescription": "Night lamp",
+            "purchasePrice": "1.500.000",
+            "purchaseSellPrice": false,
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase6",
+            "purchaseTitle": "Muggo",
+            "purchaseDescription": "Small mug",
+            "purchasePrice": "150.000",
+            "purchaseSellPrice": false,
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase7",
+            "purchaseTitle": "Pingky",
+            "purchaseDescription": "Cute bed set",
+            "purchasePrice": "7.000.000",
+            "purchaseSellPrice": "14.000.000",
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase8",
+            "purchaseTitle": "Potty",
+            "purchaseDescription": "Minimalist flower pot",
+            "purchasePrice": "500.000",
+            "purchaseSellPrice": false,
+            })
+        </div>
+        <button class="products__show-more">Show More</button>
+    </div>
+</section>
 </body>
 </html>
