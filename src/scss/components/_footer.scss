@@ -1,0 +1,79 @@
+.footer {
+  padding: 32px 0;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  font-family: sans-serif;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 32px;
+  }
+
+  &__brand {
+    width: 10%;
+  }
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  &__address {
+    font-style: normal;
+    margin-top: 0.5rem;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  &__links,
+  &__help,
+  &__newsletter {
+    width: 15%;
+  }
+  &__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__list li {
+    margin-bottom: 0.5rem;
+  }
+  &__list a {
+    text-decoration: none;
+    color: #777;
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__form {
+    display: flex;
+  }
+  &__input {
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    width: 70%;
+    margin-right: 0.5rem;
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+    border-bottom: 1px solid #000;
+  }
+
+  &__copyright {
+    text-align: center;
+    color: #777;
+    font-size: 0.8rem;
+  }
+}
