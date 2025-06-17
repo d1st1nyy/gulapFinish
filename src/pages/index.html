@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
 @@include('../components/_header.html')
@@ -45,10 +45,11 @@
 <section class="products">
     <div class="container">
         <h2 class="products__title">Our Products</h2>
-
         <div class="products__grid">
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase1",
+            "classSale":"sale",
+            "text":"-30%",
             "purchaseTitle": "Syltherine",
             "purchaseDescription": "Stylish cafe chair",
             "purchasePrice": "2.500.000",
@@ -57,6 +58,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase2",
+            "classSale":"",
+            "text":"",
             "purchaseTitle": "Leviosa",
             "purchaseDescription": "Stylish cafe chair",
             "purchasePrice": "2.500.000",
@@ -65,6 +68,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase3",
+            "classSale":"sale",
+            "text":"-50%",
             "purchaseTitle": "Lolito",
             "purchaseDescription": "Luxury big sofa",
             "purchasePrice": "7.000.000",
@@ -73,6 +78,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase4",
+            "classSale":"new",
+            "text":"New",
             "purchaseTitle": "Respira",
             "purchaseDescription": "Outdoor bar table and stool",
             "purchasePrice": "500.000",
@@ -81,6 +88,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase5",
+            "classSale":"",
+            "text":"",
             "purchaseTitle": "Grifo",
             "purchaseDescription": "Night lamp",
             "purchasePrice": "1.500.000",
@@ -89,6 +98,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase6",
+            "classSale":"new",
+            "text":"New",
             "purchaseTitle": "Muggo",
             "purchaseDescription": "Small mug",
             "purchasePrice": "150.000",
@@ -97,6 +108,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase7",
+            "classSale":"sale",
+            "text":"-50%",
             "purchaseTitle": "Pingky",
             "purchaseDescription": "Cute bed set",
             "purchasePrice": "7.000.000",
@@ -105,6 +118,8 @@
 
             @@include('../components/_purchase.html', {
             "purchaseImg": "./assets/images/Purchase8",
+            "classSale":"new",
+            "text":"New",
             "purchaseTitle": "Potty",
             "purchaseDescription": "Minimalist flower pot",
             "purchasePrice": "500.000",
@@ -113,6 +128,37 @@
         </div>
         <button class="products__show-more">Show More</button>
     </div>
+</section>
+<section class="inspiration">
+    <div class="inspiration__next">
+        <img src="./assets/images/arrow2.webp" alt="" class="inspiration__next__arrow">
+    </div>
+    <div class="inspiration__about">
+        <h2 class="inspiration__about__title">50+ Beautiful rooms inspiration</h2>
+        <p class="inspiration__about__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+        <button class="inspiration__about__button">Explore More</button>
+    </div>
+    <div class="inspiration__room">
+        <div class="inspiration__room__block">
+            <div class="inspiration__room__block__inner">
+                <span class="inspiration__room__block__inner__text info">01 — Bed Room</span>
+                <h3 class="inspiration__room__block__inner__title">Inner Peace</h3>
+            </div>
+            <button class="inspiration__room__block__button">
+                <img src="./assets/images/arrow.webp" alt="" class="inspiration__room__block__button__arrow">
+            </button>
+        </div>
+        <img src="./assets/images/inspiration3.webp" alt="" class="inspiration__room__block__img">
+    </div>
+    <div class="inspiration__other">
+        <img src="./assets/images/inspiration4.webp" alt="" class="inspiration__other__img">
+        <img src="./assets/images/indicator.webp" alt="" class="inspiration__other__indicator">
+    </div>
+</section>
+<section class="share">
+    <span class="share__text">Share your setup with</span>
+    <h2 class="share__title">#FuniroFurniture</h2>
+    <img src="./assets/images/pictures.webp" alt="" class="share__img">
 </section>
 @@include('../components/_footer.html')
 </body>

@@ -1,3 +1,22 @@
+.sale{
+  background-color: #b16052;
+}
+.new{
+  background-color: #46b192;
+}
+.purchase__mark{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  color: white;
+  border-radius: 50%;
+}
 .purchase {
   width: 300px;
   height: 450px;
@@ -5,7 +24,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
-
   &:hover {
     transform: translateY(-5px);
 
