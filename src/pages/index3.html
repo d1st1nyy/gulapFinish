@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Purchase</title>
+</head>
+<body>
+@@include('../components/_header.html')
+<section class="asgaard">
+    <span class="asgaard__txt">Home</span>
+    <img src="./assets/images/arrow2.webp" alt="" class="asgaard__arrow">
+    <span class="asgaard__txt">Shop</span>
+    <img  src="./assets/images/arrow2.webp" alt="" class="asgaard__arrow">
+    <div class="asgaard__line"></div>
+    <span class="asgaard__txt1">Asgaard sofa</span>
+</section>
+
+
+<section class="description">
+    <div class="description__block1">
+        <h3 class="description__block1__title1">Description</h3>
+        <h3 class="description__block1__title2">Additional Information</h3>
+        <h3 class="description__block1__title2">Reviews [5]</h3>
+    </div>
+    <p class="description__text">
+        Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+    </p>
+    <p class="description__text">
+        Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
+    </p>
+    <div class="description__block2">
+        <img src="./assets/images/sofa1.webp" alt="" class="description__block2__image">
+        <img src="./assets/images/sofa2.webp" alt="" class="description__block2__image">
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <h2 class="products__title">Related Products</h2>
+        <div class="products__grid">
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase1",
+            "classSale":"sale",
+            "text":"-30%",
+            "purchaseTitle": "Syltherine",
+            "purchaseDescription": "Stylish cafe chair",
+            "purchasePrice": "2.500.000",
+            "purchaseSellPrice": "3.500.000",
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase2",
+            "classSale":"",
+            "text":"",
+            "purchaseTitle": "Leviosa",
+            "purchaseDescription": "Stylish cafe chair",
+            "purchasePrice": "2.500.000",
+            "purchaseSellPrice": false,
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase3",
+            "classSale":"sale",
+            "text":"-50%",
+            "purchaseTitle": "Lolito",
+            "purchaseDescription": "Luxury big sofa",
+            "purchasePrice": "7.000.000",
+            "purchaseSellPrice": "14.000.000",
+            })
+
+            @@include('../components/_purchase.html', {
+            "purchaseImg": "./assets/images/Purchase4",
+            "classSale":"new",
+            "text":"New",
+            "purchaseTitle": "Respira",
+            "purchaseDescription": "Outdoor bar table and stool",
+            "purchasePrice": "500.000",
+            "purchaseSellPrice": false,
+            })
+        </div>
+        <button class="products__show-more">Show More</button>
+    </div>
+</section>
+@@include('../components/_footer.html')
+</body>
+</html>

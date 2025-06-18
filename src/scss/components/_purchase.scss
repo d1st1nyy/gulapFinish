@@ -64,7 +64,6 @@
 
   &__add-to-cart {
     background-color: white;
-    color: #b88e2f;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -73,7 +72,10 @@
     height: 45px;
     margin-bottom: 15px;
     transition: background-color 0.3s ease;
-
+    a{
+      color: #b88e2f;
+      text-decoration: none;
+    }
     &:hover {
       background-color: #eee;
     }

@@ -1,16 +1,13 @@
 .footer {
-  padding: 32px 0;
+  padding: 32px 110px;
   background-color: #fff;
-  border-top: 1px solid #eee;
+  border-top: #dddddd solid 1px;
   font-family: sans-serif;
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
     padding-bottom: 32px;
-  }
-
-  &__brand {
-    width: 10%;
   }
   &__logo {
     font-size: 24px;
@@ -25,11 +22,7 @@
     font-size: 0.9rem;
   }
 
-  &__links,
-  &__help,
-  &__newsletter {
-    width: 15%;
-  }
+
   &__title {
     font-size: 1.1rem;
     font-weight: bold;
@@ -72,8 +65,6 @@
   }
 
   &__copyright {
-    text-align: center;
-    color: #777;
-    font-size: 0.8rem;
+    border-top: #dddddd solid 1px;
   }
 }
