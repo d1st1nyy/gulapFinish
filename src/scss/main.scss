@@ -370,9 +370,6 @@ body {
     display: flex;
     gap: 30px;
   }
-
-
-
   .cart-table {
     width: 100%;
     border-collapse: collapse;
@@ -388,7 +385,6 @@ body {
         }
       }
     }
-
     tbody {
       tr {
         td {
@@ -400,7 +396,6 @@ body {
     .price-header { width: 20%; }
     .quantity-header { width: 15%; }
     .subtotal-header { width: 20%; }
-
     .product-cell {
       .product-info {
         display: flex;
@@ -419,13 +414,11 @@ body {
       max-width: 40px;
       border-radius: 20%;
     }
-
     .subtotal-cell {
       .subtotal-content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         .delete-icon {
           width: 22px;
           height: 22px;
@@ -435,20 +428,17 @@ body {
       }
     }
   }
-
   .cart-totals {
     text-align: center;
     background-color: #f9f1e7;
     padding: 25px;
     width: 350px;
     flex-shrink: 0;
-
     h2 {
       font-size: 32px;
       margin-top: 0;
       margin-bottom: 50px;
     }
-
     .totals-row {
       display: flex;
       justify-content: space-around;
@@ -458,7 +448,6 @@ body {
         font-weight: bolder;
         color: #000000;
       }
-
       .value {
         font-size: 16px;
         color: #9f9f9f;
@@ -469,7 +458,6 @@ body {
         }
       }
     }
-
     .checkout-btn {
       width: 200px;
       height: 60px;
@@ -480,6 +468,174 @@ body {
       border-radius: 10px;
       cursor: pointer;
       font-weight: bold;
+      margin-top: 20px;
+    }
+  }
+}
+.billing-section {
+  padding: 20px 0;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    h2{
+      font-family: "Poppins", sans-serif;
+      font-size: 36px;
+    }
+  }
+  .billing-wrapper {
+    display: flex;
+    gap: 80px;
+  }
+  .billing-form {
+    flex: 1;
+    .form-row {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      .full-width {
+        width: 100%;
+      }
+    }
+    .form-group {
+      margin-bottom: 15px;
+      label {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 18px;
+      }
+      input{
+        font-family: "Poppins", sans-serif;
+        color: black;
+        font-size: 18px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 25px;
+        border: 1px solid #9F9F9F;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+      textarea {
+        resize: vertical;
+      }
+    }
+  }
+  select{
+    color: #9f9f9f;
+    font-size: 18px;
+  }
+  select:focus{
+    color: black;
+  }
+  select:active{
+    color: black;
+  }
+  .billing-summary {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    .summary-row1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 32px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .summary-row2 {
+      .asg{
+        font-family: "Poppins", sans-serif;
+        color: #9f9f9f;
+      }
+      .price{
+        font-family: "Poppins", sans-serif;
+        color: #000000;
+      }
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: -40px;
+    }
+    .summary-row3 {
+      .asg1{
+        font-family: "Poppins", sans-serif;
+        color: black;
+      }
+      .price{
+        font-family: "Poppins", sans-serif;
+        color: #000000;
+      }
+      display: flex;
+      justify-content: space-between;
+      margin-top: -10px;
+    }
+    .summary-row4 {
+      .asg1{
+        font-family: "Poppins", sans-serif;
+        color: black;
+        font-size: 32px;
+      }
+      .price1{
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: #b88e2f;
+        font-size: 32px;
+      }
+      height: 100px;
+      vertical-align: middle;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -10px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #D9D9D9;
+      margin: 10px 0;
+    }
+    input[type="radio"] {
+      accent-color: black;
+      cursor: pointer;
+    }
+    .payment-options {
+      margin-top: 20px;
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .payment-description {
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        color: #9f9f9f;
+        margin-bottom: 10px;
+      }
+    }
+    .privacy-policy {
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      color: #9f9f9f;
+      .ssillka{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+    }
+    .place-order-button {
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border: 1px solid #9F9F9F;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 50%;
       margin-top: 20px;
     }
   }
