@@ -393,11 +393,40 @@
                         Cash On Delivery
                     </label>
                 <p class="privacy-policy">Your personal data will be used to support your experience <br>this website, to manage access to your account, and <br>for other purposes described in our <a href="" class="ssillka">privacy policy</a>.</p>
-                <button class="place-order-button">Place order</button>
+                <div class="button_ord">
+                    <button class="place-order-button">Place order</button>
+                </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<section class="factSection">
+    @@include("./_fact.html",{
+    "img":"/assets/images/cup",
+    "alt":"Кубок",
+    "title":"High Quality",
+    "text":"crafted from top materials"
+    })
+    @@include("./_fact.html",{
+    "img":"./assets/images/verification",
+    "alt":"Галочка",
+    "title":"Warranty Protection",
+    "text":"Over 2 years"
+    })
+    @@include("./_fact.html",{
+    "img":"./assets/images/chest",
+    "alt":"Сундук",
+    "title":"Free Shipping",
+    "text":"Order over 150 $"
+    })
+    @@include("./_fact.html",{
+    "img":"./assets/images/support",
+    "alt":"Поддержка",
+    "title":"24 / 7 Support",
+    "text":"Dedicated support"
+    })
+</section>
+@@include('../components/_footer.html')
 </body>
 </html>
