@@ -9,12 +9,21 @@
   <title>Compains</title>
 </head>
 <body>
+@@include('../components/_header.html')
+@@include('../components/_background.html',{
+"title":"Product Comparison",
+"text": "Comparison"
+})
+<section class=""></section>
 <section class="product-table-section">
-  <div class="container">
+  <div class="product-table-section__container">
     <table>
       <thead>
-      <tr>
-        <th class="general-header" colspan="4">General</th>
+      <tr class="container__header-row">
+        <th class="general-header">General</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
       </tr>
       </thead>
       <tbody>
@@ -54,8 +63,11 @@
         <td class="bordered-right">Bright Grey & Lion</td>
         <td class="empty-col">&nbsp;</td>
       </tr>
-      <tr>
-        <th class="product-header" colspan="4">Product</th>
+      <tr class="header-row2">
+        <th class="product-header">Product</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
       </tr>
       <tr class="data-row">
         <td>Filling Material</td>
@@ -87,8 +99,11 @@
         <td class="bordered-right">India</td>
         <td class="empty-col">&nbsp;</td>
       </tr>
-      <tr>
-        <th class="dimensions-header" colspan="4">Dimensions</th>
+      <tr class="header-row2">
+        <th class="dimensions-header">Dimensions</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
       </tr>
       <tr class="data-row">
         <td>Width</td>
@@ -126,8 +141,11 @@
         <td class="bordered-right">5.46 cm</td>
         <td class="empty-col">&nbsp;</td>
       </tr>
-      <tr>
-        <th class="warranty-header" colspan="4">Warranty</th>
+      <tr class="header-row2">
+        <th class="warranty-header">Warranty</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
+        <th class="empty-col">&nbsp;</th>
       </tr>
       <tr class="data-row">
         <td>Warranty Summary</td>
@@ -138,7 +156,7 @@
       <tr class="data-row">
         <td>Warranty Service Type</td>
         <td class="bordered-right">For Warranty Claims or Any Product Related Issues Please Email at operations@trevifurniture.com</td>
-        <td class="bordered-right">For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</td>
+        <td class="bordered-right">Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</td>
         <td class="empty-col">&nbsp;</td>
       </tr>
       <tr class="data-row">
@@ -148,7 +166,7 @@
         <td class="empty-col">&nbsp;</td>
       </tr>
       <tr class="data-row">
-        <td>Not Covered in Warranty</td>
+        <td>Not Covered in <br>Warranty</td>
         <td class="bordered-right">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</td>
         <td class="bordered-right">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</td>
         <td class="empty-col">&nbsp;</td>
@@ -162,10 +180,10 @@
       <tr class="button-row">
         <td>&nbsp;</td>
         <td class="bordered-right">
-          <button class="add-to-cart-button">Add to Cart</button>
+          <button class="product-table-section__add-to-cart-button">Add to Cart</button>
         </td>
         <td class="bordered-right">
-          <button class="add-to-cart-button">Add to Cart</button>
+          <button class="product-table-section__add-to-cart-button">Add to Cart</button>
         </td>
         <td class="empty-col"></td>
       </tr>
@@ -173,5 +191,32 @@
     </table>
   </div>
 </section>
+<section class="factSection">
+  @@include("./_fact.html",{
+  "img":"/assets/images/cup",
+  "alt":"Кубок",
+  "title":"High Quality",
+  "text":"crafted from top materials"
+  })
+  @@include("./_fact.html",{
+  "img":"./assets/images/verification",
+  "alt":"Галочка",
+  "title":"Warranty Protection",
+  "text":"Over 2 years"
+  })
+  @@include("./_fact.html",{
+  "img":"./assets/images/chest",
+  "alt":"Сундук",
+  "title":"Free Shipping",
+  "text":"Order over 150 $"
+  })
+  @@include("./_fact.html",{
+  "img":"./assets/images/support",
+  "alt":"Поддержка",
+  "title":"24 / 7 Support",
+  "text":"Dedicated support"
+  })
+</section>
+@@include('../components/_footer.html')
 </body>
 </html>

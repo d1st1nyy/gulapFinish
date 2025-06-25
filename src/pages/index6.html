@@ -15,28 +15,26 @@
 "text": "Checkout"
 })
 <section class="billing-section">
-    <div class="container">
-        <div class="billing-wrapper">
-            <div class="billing-form">
+    <div class="billing-section__container">
+        <div class="billing-section__billing-wrapper">
+            <div class="billing-section__billing-form">
                 <h2>Billing details</h2>
                 <form>
-                    <div class="form-row">
-                        <div class="form-group full-width">
+                    <div class="billing-section__form-row">
+                        <div class="billing-section__form-group full-width">
                             <label for="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName">
                         </div>
-                        <div class="form-group full-width">
+                        <div class="billing-section__form-group full-width">
                             <label for="lastName">Last Name</label>
                             <input type="text" id="lastName" name="lastName">
                         </div>
                     </div>
-
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="companyName">Company Name (Optional)</label>
                         <input type="text" id="companyName" name="companyName">
                     </div>
-
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="country">Country / Region</label>
                         <select id="country" name="country">
                             <option value="AF">Afghanistan</option>
@@ -289,15 +287,15 @@
                             <option value="ZW">Zimbabwe</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="streetAddress">Street address</label>
                         <input type="text" id="streetAddress" name="streetAddress">
                     </div>
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="townCity">Town / City</label>
                         <input type="text" id="townCity" name="townCity">
                     </div>
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="province">Province</label>
                         <select id="province" name="province">
                             <option value="centralProvince">Central Province</option>
@@ -320,29 +318,29 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="zipCode">ZIP code</label>
                         <input type="text" id="zipCode" name="zipCode">
                     </div>
 
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="phone">Phone</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
 
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="email">Email address</label>
                         <input type="email" id="email" name="email">
                     </div>
 
-                    <div class="form-group">
+                    <div class="billing-section__form-group">
                         <label for="additionalInfo">Additional information</label>
                         <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
                     </div>
                 </form>
             </div>
-            <div class="billing-summary">
-                <div class="summary-row1">
+            <div class="billing-section__billing-summary">
+                <div class="billing-section__summary-row1">
                     <div>
                         <p>Product</p>
                     </div>
@@ -351,30 +349,30 @@
                     </div>
                 </div>
 
-                <div class="summary-row2">
+                <div class="billing-section__summary-row2">
                     <div>
-                        <p class="asg">Asgaard sofa x 1</p>
+                        <p class="summary-row2__asg">Asgaard sofa x 1</p>
                     </div>
                     <div>
-                        <p class="price">Rs. 250,000.00</p>
+                        <p class="summary-row2__price">Rs. 250,000.00</p>
                     </div>
                 </div>
 
                 <div class="summary-row3">
                     <div>
-                        <p class="asg1">Subtotal</p>
+                        <p class="summary-row3__asg1">Subtotal</p>
                     </div>
                     <div>
-                        <p class="price">Rs. 250,000.00</p>
+                        <p class="summary-row3__price">Rs. 250,000.00</p>
                     </div>
                 </div>
 
                 <div class="summary-row4">
                     <div>
-                        <p class="asg1">Total</p>
+                        <p class="summary-row4__asg1">Total</p>
                     </div>
                     <div>
-                        <p class="price1">Rs. 250,000.00</p>
+                        <p class="summary-row4__price1">Rs. 250,000.00</p>
                     </div>
                 </div>
                 <hr>
@@ -383,7 +381,7 @@
                         <input type="radio" name="paymentMethod" value="directBankTransfer" checked>
                         Direct Bank Transfer
                     </label>
-                    <p class="payment-description">Make your payment directly into our bank account. Please use <br>your Order ID as the payment reference. Your order will not be <br>shipped until the funds have cleared in our account.</p>
+                    <p class="payment-options__description">Make your payment directly into our bank account. Please use <br>your Order ID as the payment reference. Your order will not be <br>shipped until the funds have cleared in our account.</p>
                     <label>
                         <input type="radio" name="paymentMethod" value="directBankTransfer2">
                         Direct Bank Transfer
@@ -392,9 +390,9 @@
                         <input type="radio" name="paymentMethod" value="cashOnDelivery">
                         Cash On Delivery
                     </label>
-                <p class="privacy-policy">Your personal data will be used to support your experience <br>this website, to manage access to your account, and <br>for other purposes described in our <a href="" class="ssillka">privacy policy</a>.</p>
-                <div class="button_ord">
-                    <button class="place-order-button">Place order</button>
+                <p class="billing-section__privacy-policy">Your personal data will be used to support your experience <br>this website, to manage access to your account, and <br>for other purposes described in our <a href="" class="privacy-policy__ssillka">privacy policy</a>.</p>
+                <div class="billing-section__button_ord">
+                    <button class="button_ord__place-order-button">Place order</button>
                 </div>
                 </div>
             </div>
