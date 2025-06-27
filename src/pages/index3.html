@@ -18,59 +18,69 @@
     <div class="asgaard__line"></div>
     <span class="asgaard__txt1">Asgaard sofa</span>
 </section>
-<section class="product-details-section">
-    <div class="container">
-        <div class="product-wrapper">
-            <div class="image-block">
-                <div class="thumbnail-images">
-                    <img src="./assets/images/mini_purchase_1.webp" alt="Thumbnail 1">
-                    <img src="./assets/images/mini_purchase_2.webp" alt="Thumbnail 2">
-                    <img src="./assets/images/mini_purchase_3.webp" alt="Thumbnail 3">
-                    <img src="./assets/images/mini_purchase_4.webp" alt="Thumbnail 4">
-                </div>
-                <div class="main-image">
-                    <img src="./assets/images/big_purchase.webp" alt="Main Product Image">
-                </div>
+<section class="product-section">
+    <div class="product-thumbnails">
+        <div class="product-thumbnail"><img src="./assets/images/mini_purchase_1.webp"></div>
+        <div class="product-thumbnail"><img src="./assets/images/mini_purchase_2.webp"></div>
+        <div class="product-thumbnail"><img src="./assets/images/mini_purchase_3.webp"></div>
+        <div class="product-thumbnail"><img src="./assets/images/mini_purchase_4.webp"></div>
+    </div>
+    <div class="product-main-image"><img src="./assets/images/big_purchase.webp"></div>
+    <div class="product-info">
+        <div class="product-title">Asgaard sofa</div>
+        <div class="product-price">Rs. 250,000.00</div>
+        <div class="product-rating">
+            <div><img src="./assets/images/stars_purchase.webp" alt="" class="rating-stars"></div>
+            <div class="rating-divider"></div>
+            <div class="review-count">5 Customer Review</div>
+        </div>
+        <div class="product-description">Setting the bar as one of the loudest speakers in its class, the <br>
+            Kilburn is a compact, stout-hearted hero with a well-balanced <br>
+            audio which boasts a clear midrange and extended highs for a <br>
+            sound.</div>
+        <div class="option-label">Size</div>
+        <div class="size-options">
+            <div class="size-option"><button class="size-btn">L</button></div>
+            <div class="size-option"><button class="size-btn">XL</button></div>
+            <div class="size-option"><button class="size-btn">SL</button></div>
+        </div>
+        <div class="option-label">Color</div>
+        <div class="color-options">
+            <div class="color-option"><button class="color-btn-1"></button></div>
+            <div class="color-option"><button class="color-btn-2"></button></div>
+            <div class="color-option"><button class="color-btn-3"></button></div>
+        </div>
+        <div class="product-actions">
+            <button class="quantity-decrease">-</button>
+            <input type="text" value="1" class="quantity-input">
+            <button class="quantity-increase">+</button>
+            <button class="add-to-cart" onclick="location.href='./index5.html'">Add To Cart</button>
+            <button class="compare-btn" onclick="location.href='./index4.html'">+ Compare</button>
+        </div>
+        <div class="product-divider"></div>
+        <div class="product-meta-container">
+            <div class="product-meta">
+                <div class="meta-label">SKU</div>
+                <div class="meta-separator">:</div>
+                <div class="meta-value">SS001</div>
             </div>
-            <div class="content-block">
-                <h1 class="product-title">Asgaard sofa</h1>
-                <p class="product-price">Rs. 250,000.00</p>
-                <div class="star-rating">
-                    <img src="./assets/images/stars_purchase.webp" alt="Star Rating">
-                    <span class="separator">|</span>
-                    <span class="customer-review">5 Customer Review</span>
-                </div>
-                <p class="product-description">Setting the bar as one of the loudest speakers in its class, the <br>Kilburn is a compact, stout-hearted hero with a well-balanced <br>audio which boasts a clear midrange and extended highs for a <br>sound.</p>
-                <div class="size-options">
-                    <p>Size</p>
-                    <button class="size-button">L</button>
-                    <button class="size-button">XL</button>
-                    <button class="size-button">XS</button>
-                </div>
-
-                <div class="color-options">
-                    <p>Color</p>
-                    <span class="color-circle" style="background-color: purple;"></span>
-                    <span class="color-circle" style="background-color: black;"></span>
-                    <span class="color-circle" style="background-color: goldenrod;"></span>
-                </div>
-                <div class="quantity-controls">
-                    <button>-</button>
-                    <input type="text" value="1">
-                    <button>+</button>
-                    <button class="add-to-cart-button">Add To Cart</button>
-                    <button class="compare-button">+ Compare</button>
-                </div>
-                <div class="product-info">
-                    <p>SKU: SS001</p>
-                    <p>Category: Sofas</p>
-                    <p>Tags: Sofa, Chair, Home, Shop</p>
-                </div>
-                <div class="share-icons">
-                    <p>Share:</p>
-                    <span><img src="./assets/images/facebook.webp" alt="Facebook"></span>
-                    <span><img src="./assets/images/in.webp" alt="LinkedIn"></span>
-                    <span><img src="./assets/images/twitter.webp" alt="Twitter"></span>
+            <div class="product-meta">
+                <div class="meta-label">Category</div>
+                <div class="meta-separator">:</div>
+                <div class="meta-value">Sofas</div>
+            </div>
+            <div class="product-meta">
+                <div class="meta-label">Tags</div>
+                <div class="meta-separator">:</div>
+                <div class="meta-value">Sofa, Chair, Home, Shop</div>
+            </div>
+            <div class="product-meta">
+                <div class="meta-label">Share</div>
+                <div class="meta-separator">:</div>
+                <div class="social-icons">
+                    <img src="./assets/images/facebook.webp" class="facebook-icon">
+                    <img src="./assets/images/twitter.webp" class="twitter-icon">
+                    <img src="./assets/images/in.webp" class="linkedin-icon">
                 </div>
             </div>
         </div>
